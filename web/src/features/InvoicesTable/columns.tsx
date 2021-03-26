@@ -5,7 +5,7 @@ import { Space, Tooltip } from 'antd';
 
 import { ColumnType } from 'antd/es/table';
 import { RenderedCell } from 'rc-table/lib/interface';
-import { IInvoice } from './types';
+import { IInvoice } from '../../types';
 import { formatNumber } from 'helpers/number';
 
 export const columns: ColumnType<IInvoice>[] = [
@@ -42,9 +42,9 @@ export const columns: ColumnType<IInvoice>[] = [
     render: function Render(
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       _: unknown,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       record: IInvoice,
     ): React.ReactNode | RenderedCell<IInvoice> {
-      console.log(record);
       return (
         <Space size='middle'>
           <Tooltip title='Скопировать'>

@@ -5,9 +5,21 @@ import {
   DeleteOutlined,
   EditOutlined,
   PlusOutlined,
+  DownOutlined,
+  DownloadOutlined,
+  SwapOutlined,
+  PrinterOutlined
 } from '@ant-design/icons';
 
-type TIcon = 'EditOutlined' | 'DeleteOutlined' | 'CopyOutlined' | 'PlusOutlined';
+type TIcon =
+  | 'EditOutlined'
+  | 'DeleteOutlined'
+  | 'CopyOutlined'
+  | 'PlusOutlined'
+  | 'DownOutlined'
+  | 'DownloadOutlined'
+  | 'SwapOutlined'
+  | 'PrinterOutlined';
 
 interface IconProps {
   type: TIcon;
@@ -36,6 +48,18 @@ export const Icon = (props: IconProps): JSX.Element | null => {
       break;
     case 'PlusOutlined':
       icon = <PlusOutlined style={newStyle} {...otherProps} />;
+      break;
+    case 'DownOutlined':
+      icon = <DownOutlined style={newStyle} {...otherProps} />;
+      break;
+    case 'DownloadOutlined':
+      icon = <DownloadOutlined style={newStyle} {...otherProps} />;
+      break;
+    case 'SwapOutlined':
+      icon = <SwapOutlined style={newStyle} {...otherProps} />;
+      break;
+    case 'PrinterOutlined':
+      icon = <PrinterOutlined style={newStyle} {...otherProps} />;
       break;
     default:
       return null;

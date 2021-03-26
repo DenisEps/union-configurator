@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 import { AppStyles } from './App.styled';
 
 import { Invoices } from 'pages/Invoices';
+import { Invoice } from 'pages/Invoice';
 
 const { Footer } = Layout;
 
@@ -16,6 +17,10 @@ const App: React.FC = () => {
           {/* All invoices */}
           <Route path='/invoices' exact>
             <Invoices />
+          </Route>
+
+          <Route path='/invoices/:id' exact>
+            <Invoice />
           </Route>
 
           {/* Redirect to default page */}
