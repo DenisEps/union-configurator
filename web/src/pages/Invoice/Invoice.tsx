@@ -13,7 +13,7 @@ import {
 import { AntdContent, SiteContent } from 'components/Layout/Content';
 import { Icon } from 'components/Icon';
 
-// import { InvoicesTable } from 'features/InvoicesTable';
+import { ConstructionsTable } from 'features/ConstructionsTable';
 
 import { dateFormat } from 'constants/constants';
 
@@ -58,7 +58,7 @@ export const Invoice: React.FC = () => {
           ]}
         >
           <Descriptions
-            bordered
+            
             size='small'
             layout='vertical'
             column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
@@ -74,6 +74,7 @@ export const Invoice: React.FC = () => {
             </Descriptions.Item>
           </Descriptions>
         </PageHeader>
+        <ConstructionsTable />
       </SiteContent>
     </AntdContent>
   );

@@ -1,4 +1,6 @@
-export const data = [
+import { IInvoice } from 'types';
+
+export const data: IInvoice[] = [
   {
     key: '1',
     number: 12345,

@@ -5,6 +5,7 @@ const { Content: OriginalContent } = Layout;
 export const AntdContent = styled(OriginalContent)`
   padding: 0 50px;
   margin-top: 24px;
+  background: #fff;
 `;
 
 export const SiteContent = styled.div`
